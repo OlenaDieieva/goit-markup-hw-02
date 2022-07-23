@@ -1,19 +1,33 @@
-body {
-    color:
-        background-color:;
-}
-
-так все в порядке:root {
-    --primary-text-color: --title-text-color: #212121;
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* белый #FFFFFF */
+/* цвет фона #FFFFFF */
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
 }
+
+body {
+    font-family: Raleway;
+    sans-serif;
+    color: background-color:;
+}
+
+
 
 .logo {
     color: ;
 }
 
-.button {}
+.button {
+    font-family:
+        background-color:;
+}
+
+
 
 /* Логотип */
 .header.logo {
