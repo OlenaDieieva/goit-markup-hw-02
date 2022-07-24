@@ -1,11 +1,13 @@
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
+/* вторичный цвет текста #000000 */
 /* акцент #2196F3 */
 /* белый #FFFFFF */
-/* цвет фона #FFFFFF */
+/* вторичный цвет фона #2F303A; */
+/* вторичный цвет фона #F5F4FA */
 :root {
     --primary-text-color: #212121;
-    --title-text-color: #212121;
+    --title-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
 }
@@ -16,21 +18,175 @@ body {
     color: background-color:;
 }
 
-
-
-.logo {
-    color: ;
-}
-
-.button {
-    font-family:
-        background-color:;
-}
-
-
+.header nav {}
 
 /* Логотип */
-.header.logo {
-    font-family: Raleway;
+.logo {
+    font-family: 'Raleway';
     font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
 }
+
+.logo-accent {
+    color: --accent-color;
+}
+
+.link current {
+    color: --accent-color;
+}
+
+/* Контакты */
+.email: hover {
+    focus
+}
+
+.tel: {}
+
+.link {
+    color:
+}
+
+/* Герой */
+.hero {}
+
+.hero-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 5 letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: --primary-white-color:
+}
+
+.hero button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 88;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    .hero button: hover cursor со значением pointer. hover focus font-family: background-color:;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,
+        6;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.features-title hidden {}
+
+.features-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.features-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 7;
+    /* or 171% */
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+/* Работы */
+.work {}
+
+/* Наша команда */
+.team {}
+
+.team-item {}
+
+.team-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+. item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+. p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+. p ПОТФОЛИО .galery {}
+
+.galery-title hidden {}
+
+
+.galery-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.features {}
+
+/* Футер сайта */
+.footer {}
+
+.footer logo {}
+
+.footer-adress {}
+
+.footer-item {}
