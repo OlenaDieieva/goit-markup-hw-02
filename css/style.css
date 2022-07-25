@@ -29,11 +29,12 @@ a {
     text-decoration: none;
 }
 
-.header nav {
+.nav {
     background-color: var(--white);
 }
 
 /* Логотип */
+
 .logo {
     font-family: 'Raleway';
     text-decoration: none;
@@ -86,21 +87,22 @@ a {
 /* Герой */
 .hero {
     color: var(--white);
-    background: var(--primary-background-color);
+    background-color: var(--primary-background-color);
 }
 
 .hero-title {
     font-family: inherit;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.5;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
 }
 
 .hero button {
-    font-family: inherit;
+    font-family: "Roboto",
+        sans-serif;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -128,7 +130,8 @@ a {
 
 .button.primary {
     cursor: pointer;
-    font-family: inherit;
+    font-family: "Roboto",
+        sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -138,44 +141,53 @@ a {
 
 .btn-group .button {
     cursor: pointer;
+    font-family: "Roboto",
+        sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
 }
 
 /* Наши особенности */
-.section {
-    color: #212121;
+.section features {
+    background-color: var(--white);
 }
 
-.section .title-hidden {
+.title-hidden {
     display: none
 }
 
-.section .section-title {
+.section-title {
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
-p.features-text {
+.features-text {
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 /* Наша команда */
-.section .section-title {
-    font-family: inherit;
+.section team {
+    background-color: var(--secondary-background-color);
+}
 
+team .work-title {
+    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -189,25 +201,23 @@ p.features-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-p .vocation {
+.vocation {
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
-h1 {
-    opacity: 0;
+.galery-title-hidden {
+    display: none
 }
 
 .galery-title {
@@ -215,17 +225,15 @@ h1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
 
-p.example-work {
+.example-work {
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: var(--title-text-color)
 }
@@ -240,7 +248,6 @@ p.example-work {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--white);
     background: var(--primary-background-color);
@@ -251,7 +258,6 @@ p.example-work {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: var(--white);
 }
