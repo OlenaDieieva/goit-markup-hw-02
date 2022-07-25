@@ -67,6 +67,7 @@ ul {
 
 .nav a .email:hover {
     .email: focus;
+    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -76,7 +77,8 @@ ul {
     color: var(--accent-color);
 }
 
-.nav a .tel: {
+.nav a .tel {
+    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -248,10 +250,10 @@ p.example-work {
 
 /* Футер сайта */
 .footer {
-    background: #2F303A;
+    background: var(--primary-background-color);
 }
 
-.footer-logo {
+.footer .logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -259,7 +261,8 @@ p.example-work {
     line-height: 1.19;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: var(--secondary-title-text-color);
+    color: var(--white);
+    background: var(--primary-background-color);
 }
 
 .adress-item {
