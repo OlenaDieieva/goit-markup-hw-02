@@ -100,7 +100,10 @@ body {
 
             /* Фильтр работ */
 
-            .button {}
+            .button {
+                color: var(--primary-text-color);
+                background-color: var(--secondary-background-color);
+            }
 
             .button .primary: hover {
                 color: var(--white);
@@ -134,7 +137,7 @@ body {
                 display: none
             }
 
-            % .section-title {
+            .section-title {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 700;
