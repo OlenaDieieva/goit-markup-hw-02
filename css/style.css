@@ -185,7 +185,7 @@ body {
                 color: var(--title-text-color);
             }
 
-            . p ПОТФОЛИО .galery {}
+            .p .galery {}
 
             .galery-title hidden {}
 
