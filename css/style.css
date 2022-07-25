@@ -24,6 +24,9 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -49,12 +52,10 @@ ul {
 
 .nav .link.current {
     color: var(--accent-color);
-    text-decoration: none;
 }
 
 .nav .link {
     color: var(--title-text-color);
-    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -67,7 +68,6 @@ ul {
 
 .nav a .email:hover {
     .email: focus;
-    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -78,7 +78,6 @@ ul {
 }
 
 .nav a .tel {
-    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
