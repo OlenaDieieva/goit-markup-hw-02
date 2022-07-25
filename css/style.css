@@ -16,15 +16,15 @@
 }
 
 body {
-    font-family: Raleway;
-    Roboto;
+    font-family: Roboto;
     sans-serif;
     color: #212121;
     background-color: #FFFFFF;
 }
 
-.ul {
+ul {
     list-style: none;
+    text-decoration: none;
 }
 
 .header nav {
@@ -34,11 +34,11 @@ body {
 /* Логотип */
 .logo {
     font-family: 'Raleway';
+    text-decoration: none;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--secondary-title-text-color);
 }
@@ -49,79 +49,83 @@ body {
 
 .nav .link.current {
     color: var(--accent-color);
+    text-decoration: none;
 }
 
 .nav .link {
     color: var(--title-text-color);
+    text-decoration: none;
+}
 
-    /* Контакты */
+/* Контакты */
 
-    .nav a .email: hover {
+.nav a .email: hover {
 
-        .email:focus {
-            color: var(--accent-color);
+    .email:focus {
+        color: var(--accent-color);
+    }
+
+    .nav a .tel: {
+        color: var(--title-text-color);
+    }
+
+    /* Герой */
+    .hero {
+        background: #2F303A;
+    }
+
+    .hero-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    .hero button {
+        background-color: var(--accent-color);
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1, 88;
+        /* identical to box height, or 188% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: var(--white);
+
+        /* Фильтр работ */
+
+        .button {
+            color: var(--primary-text-color);
+            background-color: var(--secondary-background-color);
         }
 
-        .nav a .tel: {
-            color: var(--title-text-color);
-        }
-
-        /* Герой */
-        .hero {
-            background: #2F303A;
-        }
-
-        .hero-title {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.5;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+        .button .primary: hover {
             color: var(--white);
-        }
-
-        .hero button {
             background-color: var(--accent-color);
+        }
 
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1, 88;
-            /* identical to box height, or 188% */
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.06em;
+        .button .primary focus {
+            color: var(--primary-text-color);
+            background-color: var(--secondary-background-color);
+        }
 
-            color: var(--white);
+        .btn button: hover {
 
-            /* Фильтр работ */
-
-            .button {
-                color: var(--primary-text-color);
-                background-color: var(--secondary-background-color);
-            }
-
-            .button .primary: hover {
-                color: var(--white);
-                background-color: var(--accent-color);
-            }
-
-            .button .primary focus {
-                color: var(--primary-text-color);
-                background-color: var(--secondary-background-color);
-            }
-
-            .btn button: hover .btn button: focus {
+            .btn button: focus {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 1.6;
-                /* identical to box height, or 162% */
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: var(--primary-text-color);
@@ -142,7 +146,7 @@ body {
                 font-style: normal;
                 font-weight: 700;
                 font-size: 14px;
-                line-height: 1, 4;
+                line-height: 1.4;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
 
@@ -201,7 +205,7 @@ body {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 18px;
-                    line-height: 36px;
+                    line-height: 2.0;
                     /* identical to box height, or 200% */
                     letter-spacing: 0.06em;
 
