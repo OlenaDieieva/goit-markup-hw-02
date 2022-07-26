@@ -11,14 +11,16 @@
     --secondary-title-text-color: #000000;
     --accent-color: #2196F3;
     --white: #FFFFFF;
-    --primary-background-color: #2F303AF;
+    --primary-background-color: #2F303A;
     --secondary-background-color: #F5F4FA;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #212121;
-    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--white);
 }
 
 ul {
@@ -36,12 +38,11 @@ a {
 /* Логотип */
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--secondary-title-text-color);
 }
 
@@ -55,7 +56,10 @@ a {
 
 .nav .link:hover,
 .nav .link:focus {
-    font-family: inherit;
+    color: var(--accent-color);
+}
+
+.nav .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -67,16 +71,18 @@ a {
 
 .nav .email:hover,
 .nav .email:focus {
-    font-family: inherit;
+    color: var(--accent-color);
+}
+
+.nav .email {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--title-text-color);
 }
 
 .nav .tel {
-    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -86,12 +92,10 @@ a {
 
 /* Герой */
 .hero {
-    color: var(--white);
     background-color: var(--primary-background-color);
 }
 
 .hero-title {
-    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -100,9 +104,16 @@ a {
     color: var(--white);
 }
 
+.hero button:hover,
+.hero button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white);
+}
+
 .hero button {
-    font-family: "Roboto",
-        sans-serif;
+    font-family: inherit;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -122,7 +133,7 @@ a {
     background-color: var(--secondary-background-color);
 }
 
-.button .primary:hover,
+.button.primary:hover,
 .button.primary:focus {
     color: var(--white);
     background-color: var(--accent-color);
@@ -130,24 +141,26 @@ a {
 
 .button.primary {
     cursor: pointer;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
+}
+
+.btn-group .button:hover,
+.btn-group .button:focus {
+    color: var(--white);
+    background-color: var(--accent-color);
 }
 
 .btn-group .button {
     cursor: pointer;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
 }
@@ -157,62 +170,64 @@ a {
     background-color: var(--white);
 }
 
-.title-hidden {
-    display: none
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .section-title {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-}
-
-.features-text {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
-
-/* Наша команда */
-.section team {
-    background-color: var(--secondary-background-color);
-}
-
-team .work-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+.section-team {
+    background-color: var(--secondary-background-color);
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+. team-item {
+    background-color: var(--white);
+}
+
 .team-title {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
 .vocation {
-    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
@@ -221,7 +236,6 @@ team .work-title {
 }
 
 .galery-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -230,11 +244,9 @@ team .work-title {
 }
 
 .example-work {
-    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
     color: var(--title-text-color)
 }
 
@@ -248,36 +260,28 @@ team .work-title {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--white);
     background: var(--primary-background-color);
 }
 
 .adress-item {
-    font-family: inherit;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--white);
 }
 
 .email-item {
-    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* or 171% */
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .tel-item {
-    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* or 171% */
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
