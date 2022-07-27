@@ -10,9 +10,11 @@
     --title-text-color: #757575;
     --secondary-title-text-color: #000000;
     --accent-color: #2196F3;
+    --secondary-accent-color: #188CE8;
     --white: #FFFFFF;
     --primary-background-color: #2F303A;
     --secondary-background-color: #F5F4FA;
+
 }
 
 body {
@@ -69,12 +71,12 @@ a {
 
 /* Контакты */
 
-.nav .email:hover,
-.nav .email:focus {
+.email:hover,
+.email:focus {
     color: var(--accent-color);
 }
 
-.nav .email {
+.email {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,7 +84,7 @@ a {
     color: var(--title-text-color);
 }
 
-.nav .tel {
+.tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -106,7 +108,7 @@ a {
 
 .hero button:hover,
 .hero button:focus {
-    background: #188CE8;
+    background: var(--secondary-accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--white);
@@ -165,6 +167,10 @@ a {
     background-color: var(--secondary-background-color);
 }
 
+.photo {
+    text-decoration: none;
+}
+
 /* Наши особенности */
 .section features {
     background-color: var(--white);
@@ -183,11 +189,12 @@ a {
     margin: -1px;
 }
 
-.section-title {
+.features-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
@@ -211,7 +218,7 @@ a {
     color: var(--primary-text-color);
 }
 
-. team-item {
+.team-item {
     background-color: var(--white);
 }
 
@@ -264,12 +271,25 @@ a {
     background: var(--primary-background-color);
 }
 
-.adress-item {
+.adress-item:hover,
+.adress-item:focus {
+    color: var(--accent-color);
+}
+
+.adress {
     font-style: normal;
+}
+
+.adress-item {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white);
+}
+
+.email-item:hover,
+.email-item:focus {
+    color: var(--accent-color);
 }
 
 .email-item {
@@ -277,6 +297,11 @@ a {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.tel-item:hover,
+.tel-item:focus {
+    color: var(--accent-color);
 }
 
 .tel-item {
